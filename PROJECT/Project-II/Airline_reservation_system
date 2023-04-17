@@ -2,8 +2,10 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-
+		//Program for an airline reservation system 
 int main() {
+
+// Mikiyas Alemayew
 // declaration and initialization
 	int first_class= 0;
 	int economic_class=30;
@@ -62,6 +64,7 @@ choice :
 					cout<< "invalid input"<<endl;
 					goto choice;
 				}
+// Michael Siyamreg
 				// code to make reservation class for first class
 				if(sub_choice==1) {
 					system("CLS");
@@ -109,6 +112,7 @@ choice :
 						cout<<"Enter your passport : ";
 						cin>>passport[first_class];
 						cout<<"\n";
+//Mikiyas Alemayew Gebrewold
 						//display boarding pass according to the user information
 						cout<<"\t******* Boarding pass **********"<<endl;
 						cout<<"\t* Name : "<<name[first_class]<<endl;
@@ -165,6 +169,7 @@ choice :
 						}
 
 					} else {
+//Michael Addis
 						// prompt the user name,sex , age and passport number
 						cout<<"\nEnter your name please : ";
 						cin.ignore();
@@ -216,6 +221,7 @@ choice :
 				}
 
 			}
+// Michael Getu 
 			//display if the input passport is found
 			if(passport_found) {
 				system("CLS");

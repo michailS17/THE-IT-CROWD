@@ -2,9 +2,9 @@
 #include<cmath>
 #include<string>
 using namespace std;
-
+               // Program that Bruteforce Mechanism to find all the pytagorean tripplets below 100 and prints them out in tabular Fromat.
 int main() {
-//mike alemayeww
+//Mikiyas Alemayhu
    //Declaration
     int side1=1, side2=1, Hypotenuse=1;
     int side1_square,side2_square,Hypotenuse_square;
@@ -50,7 +50,7 @@ cout<<"\n the following table displays Pythagorean triples for side 1, side 2 an
                 side1_square=side1*side1;
                 side2_square=side2*side2;
 
-//mike siyamreg
+//Michael Siyamreg
 Hypotenuse_square=Hypotenuse*Hypotenuse;
 if (Hypotenuse_square==side1_square+side2_square)
 {
@@ -100,7 +100,7 @@ else
 }
 }
 
-//mike addis
+//Michael Addis
  //code to print Pythagorean triples for side 1, side 2 and the hypotenuse, all no larger than 100 in geometric form.
  else if(main_choice==2)
 
@@ -150,7 +150,7 @@ if(sqrtHyp<100)
                                   }
 
 
-//Mikiyas Alemayehu Gebrewold
+//Mikiyas Alemayew Gebrewold
       
   else
    {
@@ -172,7 +172,7 @@ cout<<"  "<<side1<<"     |   \\ "<<sqrtHyp<<endl;
 cout<<"\t";      cout<<" |    \\ "<<endl;
 cout<<"\t";      cout<<" |_____\\ "<<endl;
 cout<<"\t     " ;    cout<<side2<<endl;
-cout<<"DO YOU WANT TO INPUTE OTHER NUMBERS (y/n) "<<endl;
+cout<<"DO YOU WANT TO INPUT OTHER NUMBERS (y/n) "<<endl;
 cin>>choice;
 if(choice=='y'|| choice=='Y' )
 {
@@ -195,12 +195,12 @@ else
     {
 cout<<"the value is larger than 100 or isn't pythagorian triple"<<endl;
 cout<<"\n ____________________________________________"<<endl;
-cout<<"DO YOU WANT TO INPUTE OTHER NUMBERS (y/n) "<<endl;
+cout<<"DO YOU WANT TO INPUT OTHER NUMBERS (y/n) "<<endl;
 cin>>choice;
 
 
 
-//mike getu
+//Michael Getu
 
 if(choice=='y'|| choice=='Y' )
 {
@@ -221,7 +221,7 @@ else
 {
 cout<<"the value is larger than 100 or isn't Pythagorean triples"<<endl;
 cout<<"\n ____________________________________________"<<endl;
-cout<<"DO YOU WANT TO INPUTE OTHER NUMBERS (y/n) "<<endl;
+cout<<"DO YOU WANT TO INPUT OTHER NUMBERS (y/n) "<<endl;
 cin>>choice;
 if(choice=='y'|| choice=='Y' )
 {

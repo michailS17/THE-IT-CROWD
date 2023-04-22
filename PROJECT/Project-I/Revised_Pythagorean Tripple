@@ -1,6 +1,13 @@
 // mike alem
 
-
+   for (int i = 2; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++) {
+            cout << "  ";
+        }
+        for (int j = i; j >= 1; j--) {
+            cout << char('A' + j - 1) << " ";
+ 	}
+ 
 // mike addis
    for (side1=1; side1<100; side1++)
     {

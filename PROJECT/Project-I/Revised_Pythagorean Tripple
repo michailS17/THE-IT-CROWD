@@ -1,0 +1,53 @@
+// mike alem
+
+
+// mike addis
+
+
+// mike siyamreg
+
+
+// mike gebrewold
+
+//mike getu
+
+if(choice=='y'||choice=='Y')
+    goto main;
+else
+        return 0;
+}
+}
+}
+else
+{
+cout<<"the value is larger than 100 or isn't Pythagorean triples"<<endl;
+cout<<"\n ____________________________________________"<<endl;
+cout<<"DO YOU WANT TO INPUTE OTHER NUMBERS (y/n) "<<endl;
+cin>>choice;
+if(choice=='y'|| choice=='Y' )
+{
+   goto input;
+}
+else
+{
+cout<<"DO YOU WANT TO BACK TO MAIN choice (y/n)"<<endl;
+    cin>>choice;
+if(choice=='y'||choice=='Y')
+    goto main;
+else
+        return 0;
+}
+}
+ }
+else if(main_choice==3)
+{
+    cout<<"YOU EXIT THE PROGRAM"<<endl;
+    return 0;
+}
+else
+cout<<"invalid input"<<endl;
+goto Choice_again;
+
+
+return 0;
+}

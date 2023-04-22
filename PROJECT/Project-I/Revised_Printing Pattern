@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+//Mike Getu
+    char c;
+    int n;
+    cout << "Enter an uppercase letter: ";
+    cin >> c;
+    // Convert the entered letter to its corresponding integer value
+    n = c - 'A' + 1;
+    //THE FIRST HALF LOOP
+
+//Mike Gebrewold
+
+
+//Mike Siyamreg
+
+
+//Mike Alem
+
+
+//Mike Addis
+
+
+
+return 0;
+}

@@ -1,14 +1,40 @@
-// mike alem
+//program to displays Pythagorean triples for side 1, side 2 and the hypotenuse, all no larger than 100.
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    //Declaration
+    int side1=1, side2=1, Hypotenuse=1;
+    int side1_square,side2_square,Hypotenuse_square;
+    int main_choice;
+    char choice;
+//welcoming and asking  a user for a choice to program
+  cout<<"================================================"<<endl;
+        cout<<" WELCOME TO OUR PROGRAM                         "<<endl;
+main:  cout<<"________________________________________________\n"<<endl;
+        cout<<" 1) brute-force computing "<<endl;
+        cout<<" 2) to display sides of right triangle geometrically "<<endl;
+        cout<<" 3) exit \n"<<endl;
+ Choice_again: cout<<"enter your choice : ";
+ cin>>main_choice;
+ if(main_choice==1)
+ {
 
-   for (int i = 2; i <= n; i++) {
-        for (int j = 1; j <= n - i; j++) {
-            cout << "  ";
-        }
-        for (int j = i; j >= 1; j--) {
-            cout << char('A' + j - 1) << " ";
- 	}
- 
-// mike addis
+     //to display right triangle geometricaly
+cout<<"right triangle :-"<<endl;
+ cout<<"\t";    cout<< " |\\ "<<endl;
+cout<<"\t";      cout<<" | \\ "<<endl;
+cout<<"\t";      cout<<" |  \\ "<<endl;
+cout<<"side-1";cout<<"   |   \\ "<<" Hypotenuse"<<endl;
+cout<<"\t";      cout<<" |_   \\ "<<endl;
+cout<<"\t";      cout<<" |_|___\\ "<<endl;
+cout<<"\t" ;    cout<<" side-2"<<endl;
+// to do brute-force computing and display a table of Pythagorean triples
+cout<<"\n the following table displays Pythagorean triples for side 1, side 2 and the hypotenuse, all no larger than 100\n"<<endl;
+    cout<<"\t\t_________________________________________________"<<endl;
+    cout <<"\t\t|  side-1       |"<<"  side-2       |"<<" Hypotenuse    |"<<endl;
+    cout<<"\t\t|_______________|_______________|_______________|"<<endl;
+    //loop through all possible values of side1
    for (side1=1; side1<100; side1++)
     {
         //loop through all possible values of side2
@@ -51,12 +77,40 @@
     }
 side2:    cout<<"enter a value for side 2 : ";
      cin>>side2;
- 
+      if(side2<=0 || side2>=100)
+      {
+      cout<<"please enter a number only from 1 - 100 "<<endl;
+    goto side2;
 
-// mike siyamreg
-
-
-// mikiyas Alemayehu Gebrewold
+      }
+      //code to compute hypotenuse
+     double Hypsqr = pow(side1, 2) + pow(side2, 2);
+      double sqrtHyp = sqrt(Hypsqr);
+      //to display rigth triangle in geometric form.
+if(sqrtHyp<100)
+{
+    if(sqrtHyp==floor(sqrtHyp))
+    {
+        if(side1<=9)
+        {
+cout<<side1<<"^2 +"<<side2<<"^2 ="<<sqrtHyp<<endl<<endl;
+cout<<"\t"; cout<< " |\\ "<<endl;
+cout<<"\t";      cout<<" | \\ "<<endl;
+cout<<"\t";      cout<<" |  \\ "<<endl;
+cout<<"  "<<side1<<"      |   \\ "<<sqrtHyp<<endl;
+cout<<"\t";      cout<<" |    \\ "<<endl;
+cout<<"\t";      cout<<" |_____\\ "<<endl;
+cout<<"\t     " ;    cout<<side2<<endl;
+cout<<"DO YOU WANT TO INPUTE OTHER NUMBERS (y/n) "<<endl;
+cin>>choice;
+if(choice=='y'|| choice=='Y' )
+{
+    goto input;
+}
+else
+{
+cout<<"DO YOU WANT TO BACK TO MAIN choice (y/n)"<<endl;
+    cin>>choice;
 if(choice=='y'||choice=='Y')
     goto main;
 else
@@ -104,10 +158,6 @@ else
 {
 cout<<"DO YOU WANT TO BACK TO MAIN choice (y/n)"<<endl;
     cin>>choice;
-
-
-//mike getu
-
 if(choice=='y'||choice=='Y')
     goto main;
 else

@@ -2,9 +2,7 @@
 #include<cmath>
 #include<string>
 using namespace std;
-	// Program that prints an hourglass pattern of the letter H to A.
 int main() {
-//mikiyas Alemayew
 
     //declaration
     char array_[15] = {'H','G','F','E','D','C','B','A','B','C','D','E','F','G','H'};
@@ -17,8 +15,6 @@ int main() {
  //inner loop to print array elements
 		while(j<array_element)
 
-
-//Michael Siyamreg
 {
 cout<<array_[j];
 	//code to print Green color
@@ -30,8 +26,6 @@ cout<<endl;
 	for(int k = 0; k < space; k++)
 cout<<" ";
 
-
-//Michael Addis
 //reinitialization after one itration
 		array_element--;
 		space++;
@@ -45,8 +39,6 @@ cout<<" ";
 	for(int i = 0; i < 8; i++)
 	{
 
-
-//Mikiyas Alemayew Gebrewold
 //inner loop to print array elementes	
 	while(j<array_element)	
 	{			
@@ -59,7 +51,6 @@ cout<<array_[j];
 cout<<endl;	
 	  //inner loop to print space
 
-//Michal Getu Muluneh
 		for(int k = 0; k < space; k++)
 			cout<<" ";
   //reinitialization after one itration

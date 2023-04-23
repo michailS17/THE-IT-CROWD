@@ -2,9 +2,9 @@
 #include<cmath>
 #include<string>
 using namespace std;
-               // Program that Bruteforce Mechanism to find all the pytagorean tripplets below 100 and prints them out in tabular Fromat.
+              
 int main() {
-//Mikiyas Alemayhu
+
    //Declaration
     int side1=1, side2=1, Hypotenuse=1;
     int side1_square,side2_square,Hypotenuse_square;
@@ -50,39 +50,14 @@ cout<<"\n the following table displays Pythagorean triples for side 1, side 2 an
                 side1_square=side1*side1;
                 side2_square=side2*side2;
 
-//Michael Siyamreg
+
 Hypotenuse_square=Hypotenuse*Hypotenuse;
 if (Hypotenuse_square==side1_square+side2_square)
 {
 //code to print the output in table form.
-if (side1==3 || side1==4 )
-{
+
 cout<<"\t\t";                 cout<<"| "<< side1<<"\t\t|"<<side2<<"\t\t|"<< Hypotenuse<<"\t\t|"<<endl;
 cout<<"\t\t|_______________|_______________|_______________|"<<endl;
-
-}
-else   if (side1==5  ||side1==6 ||side1==7 ||side1==8  ||side1==9)
-{
-cout<<"\t\t";                  cout<<"| "<< side1<<"\t\t|"<<side2<<"\t\t|"<< Hypotenuse<<"\t\t|"<<endl;
-cout<<"\t\t|_______________|_______________|_______________|"<<endl;
-}
-else if (side1==12 ||side1==15 ||side1==24 ||side1==40)
-{
-if (side2==5 ||side2==7||side2==8 ||side2==9)
-{
-cout<<"\t\t";                 cout<<"| "<< side1<<"\t\t|"<<side2<<"\t\t|"<< Hypotenuse<<"\t\t|"<<endl;
-cout<<"\t\t|_______________|_______________|_______________|"<<endl;
-
-}
-}
-
-else
-{
-cout<<"\t\t";                 cout<<"| "<< side1<<"\t\t|"<<side2<<"\t\t|"<< Hypotenuse<<"\t\t|"<<endl;
-cout<<"\t\t|_______________|_______________|_______________|"<<endl;
-
-}
-
 }
 
 }
@@ -100,7 +75,6 @@ else
 }
 }
 
-//Michael Addis
  //code to print Pythagorean triples for side 1, side 2 and the hypotenuse, all no larger than 100 in geometric form.
  else if(main_choice==2)
 
@@ -148,9 +122,6 @@ if(sqrtHyp<100)
                                   {
                                       goto input;
                                   }
-
-
-//Mikiyas Alemayew Gebrewold
       
   else
    {
@@ -198,9 +169,6 @@ cout<<"\n ____________________________________________"<<endl;
 cout<<"DO YOU WANT TO INPUT OTHER NUMBERS (y/n) "<<endl;
 cin>>choice;
 
-
-
-//Michael Getu
 
 if(choice=='y'|| choice=='Y' )
 {

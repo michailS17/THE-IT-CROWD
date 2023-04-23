@@ -41,7 +41,7 @@ int main() {
 		cout<<"   Enter your choice here : "; //ask the user to choice among the main option
 		cin>>main_choice;
 		if(main_choice==1) {
-			if(first_class>30 && economic_class>100) {
+			if(first_class>=30 && economic_class>=100) {
 				system("CLS");
 				cout<<"ALL SEATS ARE BOOKED "<<endl;
 				system("pause");
@@ -68,7 +68,7 @@ choice :
 				// code to make reservation class for first class
 				if(sub_choice==1) {
 					system("CLS");
-					if(first_class>30) {
+					if(first_class>=30) {
 						//ask the user if he/she wants to take reservation in economy class
 						cout<<"First class is full. do you want to book economic class? (y/n)"<<endl;
 						cin>>yes_no;
@@ -135,7 +135,7 @@ choice :
 				else if (sub_choice==2) {
 					system("CLS");
 					system("color 06");
-					if(economic_class>100) {
+					if(economic_class>=100) {
 						//ask the user if he/she wants to take reservation in first class
 						cout<<"economic class is full. do you want to book first class (y/n)"<<endl;
 						cin>>yes_no;

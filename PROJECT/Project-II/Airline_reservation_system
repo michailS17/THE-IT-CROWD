@@ -5,7 +5,6 @@ using namespace std;
 		//Program for an airline reservation system 
 int main() {
 
-// Mikiyas Alemayew
 // declaration and initialization
 	int first_class= 0;
 	int economic_class=30;
@@ -19,6 +18,7 @@ int main() {
 	int now_economic_class;
 	int now_first_class;
 	bool continueloop=true;
+        int idx;
 	// do- while loop for continues program
 	do {
 		system("color F1");// to make background color white and text color blue
@@ -64,7 +64,7 @@ choice :
 					cout<< "invalid input"<<endl;
 					goto choice;
 				}
-// Michael Siyamreg
+
 				// code to make reservation class for first class
 				if(sub_choice==1) {
 					system("CLS");
@@ -112,7 +112,7 @@ choice :
 						cout<<"Enter your passport : ";
 						cin>>passport[first_class];
 						cout<<"\n";
-//Mikiyas Alemayew Gebrewold
+
 						//display boarding pass according to the user information
 						cout<<"\t******* Boarding pass **********"<<endl;
 						cout<<"\t* Name : "<<name[first_class]<<endl;
@@ -169,7 +169,7 @@ choice :
 						}
 
 					} else {
-//Michael Addis
+
 						// prompt the user name,sex , age and passport number
 						cout<<"\nEnter your name please : ";
 						cin.ignore();
@@ -211,7 +211,7 @@ choice :
 			cout<<"please enter the passport "<<endl;
 			cin>>tobesearched_passport;
 			bool passport_found= false;
-			int idx;
+			
 			//search among all alternative
 			for(int i=0 ; i<100 ; i++) {
 				if(passport[i]==tobesearched_passport) {
@@ -221,7 +221,7 @@ choice :
 				}
 
 			}
-// Michael Getu 
+
 			//display if the input passport is found
 			if(passport_found) {
 				system("CLS");
@@ -254,16 +254,16 @@ choice :
 			system("color 09");
 		
 			for(int i = 0; i < 100; i++) {
-				first_class=i;
+				idx=i;
 				if(name[i].size() != 0){
 					cout<<"\n";
 					cout<<"\t******* Boarding pass **********"<<endl;
-					cout<<"\t* Name : "<<name[first_class]<<endl;
-					cout<<"\t* Sex  : "<<sex[first_class]<<endl;
-					cout<<"\t* Age  : "<<age[first_class]<<endl;
-					cout<<"\t* Passport number  : "<<passport[first_class]<<endl;
+					cout<<"\t* Name : "<<name[idx]<<endl;
+					cout<<"\t* Sex  : "<<sex[idx]<<endl;
+					cout<<"\t* Age  : "<<age[idx]<<endl;
+					cout<<"\t* Passport number  : "<<passport[idx]<<endl;
 					cout<<"\t*-------------------------------"<<endl;
-					cout<<"\t* Seat number : "<< ++first_class<<endl;
+					cout<<"\t* Seat number : "<< ++idx<<endl;
 					if(i < 30)
 						cout<<"\t*Section: first               " << endl;
 					else

@@ -227,7 +227,11 @@ choice :
 				cout << "\tAge:   " << age[idx]<< endl;
 				cout << "\tPassport number:   " << passport[idx]<< endl;
 				cout << "\tSeatNo:" << idx+1<<endl;
-				cout << "\tSection: Economy" << endl;
+				if(idx<30) {
+				cout << "\tSection: First Class"<< endl;
+				} else {
+				cout << "\tSection: Economy Class" << endl;
+				}
 				cout<<"\t-------------------------------------------"<<endl;
 			} else {
 				// display the output prompt with red color if passport is not found

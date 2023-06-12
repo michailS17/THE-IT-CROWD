@@ -39,7 +39,7 @@ will print the product of different series of numbers using a variable length ar
 - prints the product of for different series of numbers
 ### calculateProduct
 - returns a double data type
-- is a recursive function that calculate vaiable number of aguments (mean the number of arguments set can very with each call)
+- is a recursive function that calculate vaiable number of aguments (the number of arguments set can very with each call)
 ## Question 8 <a name="Question8"></a>
 checks if an integer is a prime number or not
 ### main function

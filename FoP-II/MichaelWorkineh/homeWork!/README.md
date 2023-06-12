@@ -32,12 +32,7 @@ uses the pythagorian theorem to find the hypotenuse of a triangle
 ### hypotenuse function
 - returns the square root of side1 squared plus side2 squared
 ## Question 7 <a name="Question7"></a>
-will print the product of different series of numbers using a variable length argument
-### main function
-- prints the product of for different series of numbers
-### calculateProduct
-- returns a double data type
-- is a recursive function that calculate vaiable number of aguments (mean the number of arguments set can very with each call)
+**NEEDS REVISION!**
 ## Question 8 <a name="Question8"></a>
 checks if an integer is a prime number or not
 ### main function
@@ -50,5 +45,4 @@ checks if an integer is a prime number or not
 - this function returns:
   - true if the tester remains zero (no factor found)
   - false if the tester has a different value (a was factor found)
-
 
